@@ -1,0 +1,32 @@
+# depslib dependency file v1.0
+1762761513 source:d:\projects\c++\iti\lab_ten\main.cpp
+	<iostream>
+	<cstring>
+	"person.cpp"
+	"student.cpp"
+	"employee.cpp"
+	"instructor.cpp"
+	"subtask1.cpp"
+	"subtask2.cpp"
+	"subtask3.cpp"
+	"subtask4.cpp"
+	"subtask5.cpp"
+
+1762760988 d:\projects\c++\iti\lab_ten\subtask1.cpp
+
+1762760786 d:\projects\c++\iti\lab_ten\subtask2.cpp
+
+1762761421 d:\projects\c++\iti\lab_ten\subtask3.cpp
+
+1762760786 d:\projects\c++\iti\lab_ten\subtask4.cpp
+
+1762760801 d:\projects\c++\iti\lab_ten\subtask5.cpp
+
+1762761421 d:\projects\c++\iti\lab_ten\person.cpp
+
+1762763195 d:\projects\c++\iti\lab_ten\student.cpp
+
+1762761421 d:\projects\c++\iti\lab_ten\employee.cpp
+
+1762761421 d:\projects\c++\iti\lab_ten\instructor.cpp
+

@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1762074624 source:d:\projects\c++\iti\lab_three\main.cpp
+	<iostream>
+	<string.h>
+	"subtask3.cpp"
+
+1762060657 d:\projects\c++\iti\lab_three\subtask1.cpp
+
+1762055451 d:\projects\c++\iti\lab_three\subtask4.cpp
+
+1762057601 d:\projects\c++\iti\lab_three\subtask5.cpp
+
+1762060191 d:\projects\c++\iti\lab_three\subtask2.cpp
+
+1762060191 d:\projects\c++\iti\lab_three\subtask3.cpp
+

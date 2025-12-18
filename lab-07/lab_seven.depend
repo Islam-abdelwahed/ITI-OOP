@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1762413592 source:d:\projects\c++\iti\lab_seven\main.cpp
+	<iostream>
+	"subtask1.cpp"
+	"subtask2.cpp"
+
+1762413627 d:\projects\c++\iti\lab_seven\subtask1.cpp
+
+1762413634 d:\projects\c++\iti\lab_seven\subtask2.cpp
+

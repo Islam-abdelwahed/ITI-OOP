@@ -1,0 +1,27 @@
+# depslib dependency file v1.0
+1762159901 source:d:\projects\c++\iti\lab_four\main.cpp
+	<iostream>
+	<conio.h>
+	<windows.h>
+	"subtask1.cpp"
+	"subtask2.cpp"
+	"subtask3.cpp"
+	"subtask4.cpp"
+	"subtask5.cpp"
+	"subtask6.cpp"
+	"subtask7.cpp"
+
+1762158985 d:\projects\c++\iti\lab_four\subtask1.cpp
+
+1762159842 d:\projects\c++\iti\lab_four\subtask2.cpp
+
+1762158036 d:\projects\c++\iti\lab_four\subtask3.cpp
+
+1762158036 d:\projects\c++\iti\lab_four\subtask4.cpp
+
+1762158036 d:\projects\c++\iti\lab_four\subtask5.cpp
+
+1762158197 d:\projects\c++\iti\lab_four\subtask6.cpp
+
+1762157515 d:\projects\c++\iti\lab_four\subtask7.cpp
+

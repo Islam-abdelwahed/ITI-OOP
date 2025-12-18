@@ -1,0 +1,24 @@
+# depslib dependency file v1.0
+1761982238 source:d:\projects\c++\iti\lab_two\main.cpp
+	<iostream>
+	<cmath>
+	<conio.h>
+	<windows.h>
+	"subtask10.cpp"
+
+1761976604 d:\projects\c++\iti\lab_two\subtask1.cpp
+
+1761976604 d:\projects\c++\iti\lab_two\subtask2.cpp
+
+1761976604 d:\projects\c++\iti\lab_two\subtask4.cpp
+
+1761914474 d:\projects\c++\iti\lab_two\subtask5.cpp
+
+1761920056 d:\projects\c++\iti\lab_two\subtask8.cpp
+
+1761939312 d:\projects\c++\iti\lab_two\subtask9.cpp
+
+1761976604 d:\projects\c++\iti\lab_two\subtask10.cpp
+
+1761976830 d:\projects\c++\iti\lab_two\subtask3.cpp
+
