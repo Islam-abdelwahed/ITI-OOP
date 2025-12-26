@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C++ DBMS Project Presentation</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Montserrat:wght@600;800&display=swap" rel="stylesheet">
+    
+    <!-- Reveal.js CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/theme/night.min.css">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --accent-color: #61dafb; /* React-like blue for tech feel */
+            --text-color: #e0e0e0;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .reveal h1, .reveal h2, .reveal h3, .reveal h4 {
+            font-family: 'Montserrat', sans-serif;
+            text-transform: none;
+            color: var(--accent-color);
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .box {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid var(--accent-color);
+            flex: 1;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .box:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.1);
+        }
+        .icon-large {
+            font-size: 2.5em;
+            color: var(--accent-color);
+            margin-bottom: 20px;
+            display: block;
+        }
+        .highlight {
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+        .code-snippet {
+            background: #1e1e1e;
+            color: #d4d4d4;
+            padding: 20px;
+            border-radius: 8px;
+            font-family: 'Fira Code', monospace;
+            text-align: left;
+            font-size: 0.65em;
+            border-left: 5px solid var(--accent-color);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        ul.custom-list {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+        }
+        ul.custom-list li {
+            margin-bottom: 15px;
+            padding-left: 30px;
+            position: relative;
+        }
+        ul.custom-list li::before {
+            content: "➤";
+            color: var(--accent-color);
+            position: absolute;
+            left: 0;
+            top: 2px;
+            font-size: 0.8em;
+        }
+        .step-number {
+            background: var(--accent-color);
+            color: #000;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="reveal">
+        <div class="slides">
+
+            <!-- Title Slide -->
+            <section>
+                <div style="background: rgba(255,255,255,0.05); padding: 50px; border-radius: 20px; border: 1px solid var(--accent-color);">
+                    <i class="fas fa-database" style="font-size: 4em; color: var(--accent-color); margin-bottom: 20px;"></i>
+                    <h1>C++ DBMS Engine</h1>
+                    <h3 style="color: #fff; font-weight: 300;">SQL Server Inspired Architecture</h3>
+                    <p style="font-size: 0.6em; margin-top: 30px; opacity: 0.7;">
+                        Created by the Development Team
+                    </p>
+                </div>
+            </section>
+
+            <!-- Slide 1: Architecture -->
+            <section>
+                <h3>1. Architecture: SQL Server Style</h3>
+                <p style="font-size: 0.7em; opacity: 0.8;">Event-Driven Logic with Physical File Mapping.</p>
+                <hr style="border-color: var(--accent-color); width: 20%; margin: 20px auto;">
+
+                <div class="container">
+                    <div class="box fragment fade-up">
+                        <i class="fas fa-keyboard icon-large"></i>
+                        <h5>The Event</h5>
+                        <p style="font-size: 0.6em;">User inputs a SQL Query<br>(e.g., <code>INSERT</code>, <code>SELECT</code>).</p>
+                    </div>
+                    
+                    <div class="fragment fade-up" style="font-size: 2em; color: #555;">➜</div>
+
+                    <div class="box fragment fade-up">
+                        <i class="fas fa-server icon-large"></i>
+                        <h5>The Structure</h5>
+                        <p style="font-size: 0.6em;">Like SQL Server, Logical Tables map to Physical Files on Disk.</p>
+                    </div>
+
+                    <div class="fragment fade-up" style="font-size: 2em; color: #555;">➜</div>
+
+                    <div class="box fragment fade-up">
+                        <i class="fas fa-play-circle icon-large"></i>
+                        <h5>Execution</h5>
+                        <p style="font-size: 0.6em;">Logic processes data in RAM & updates files.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 2: Storage Strategy -->
+            <section>
+                <h3>2. Storage: CSV Standard</h3>
+                <div style="display: flex; align-items: flex-start; gap: 40px; margin-top: 40px;">
+                    
+                    <!-- Text Content -->
+                    <div style="flex: 1; text-align: left;">
+                        <ul class="custom-list" style="font-size: 0.75em;">
+                            <li class="fragment fade-right">Adopting the <strong>CSV (Comma Separated Values)</strong> standard.</li>
+                            <li class="fragment fade-right">One Table = One <span class="highlight">.csv</span> File (Modular Design).</li>
+                            <li class="fragment fade-right"><strong>Persistence:</strong> Mimics SQL Server's physical storage model.</li>
+                            <li class="fragment fade-right">Direct compatibility with Excel & Data Tools.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Code Visual -->
+                    <div style="flex: 1;" class="fragment zoom-in">
+                        <div class="code-snippet">
+                            <div style="margin-bottom: 10px; border-bottom: 1px solid #555; padding-bottom: 5px;">
+                                <i class="fas fa-file-csv"></i> Users.csv
+                            </div>
+                            <span style="color: #61dafb;">ID,Name,Age</span> &nbsp;&nbsp;<span style="color: #6a9955;">// Header</span><br>
+                            1,Ahmed,25 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #6a9955;">// Record 1</span><br>
+                            2,Sarah,30 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #6a9955;">// Record 2</span><br>
+                            3,Ali,22 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #6a9955;">// Record 3</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 3: Workflow -->
+            <section>
+                <h3>3. Workflow: I/O Operations</h3>
+                <p style="font-size: 0.6em; margin-bottom: 40px;">Bridging the gap between Storage (HDD) and Memory (RAM).</p>
+
+                <div style="position: relative; width: 80%; margin: 0 auto; background: rgba(255,255,255,0.05); padding: 30px; border-radius: 15px;">
+                    
+                    <!-- Step 1 -->
+                    <div class="fragment fade-up" style="display: flex; align-items: center; margin-bottom: 20px;">
+                        <span class="step-number">1</span>
+                        <div style="text-align: left; margin-left: 20px;">
+                            <h5 style="margin: 0; color: #fff;">Loading Phase (<code class="highlight">ifstream</code>)</h5>
+                            <span style="font-size: 0.6em; opacity: 0.7;">Parsing <strong>.csv</strong> file into <code>vector&lt;vector&lt;string&gt;&gt;</code>.</span>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="fragment fade-up" style="display: flex; align-items: center; margin-bottom: 20px;">
+                        <span class="step-number">2</span>
+                        <div style="text-align: left; margin-left: 20px;">
+                            <h5 style="margin: 0; color: #fff;">Processing Phase (RAM)</h5>
+                            <span style="font-size: 0.6em; opacity: 0.7;">Performing Search, Filter, and Edit operations in Memory.</span>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="fragment fade-up" style="display: flex; align-items: center;">
+                        <span class="step-number">3</span>
+                        <div style="text-align: left; margin-left: 20px;">
+                            <h5 style="margin: 0; color: #fff;">Commit Phase (<code class="highlight">ofstream</code>)</h5>
+                            <span style="font-size: 0.6em; opacity: 0.7;">Rewriting the <strong>.csv</strong> file to save changes permanently.</span>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Thank You Slide -->
+            <section>
+                <i class="fas fa-check-circle" style="font-size: 3em; color: var(--accent-color); margin-bottom: 20px;"></i>
+                <h2>Thank You</h2>
+                <p>Any Questions?</p>
+            </section>
+
+        </div>
+    </div>
+
+    <!-- Reveal.js Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.js"></script>
+    <script>
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            center: true,
+            hash: true,
+            transition: 'convex', // none/fade/slide/convex/concave/zoom
+            // More options can be configured here
+        });
+    </script>
+</body>
+</html>
